@@ -4,19 +4,6 @@ Modelo relacional de controle de **acervo e empréstimos de uma biblioteca**, de
 
 Contém 8 tabelas, 2 views, chaves primárias e estrangeiras nomeadas, restrições `UNIQUE`, índices e sequências para IDs automáticos.
 
-## Modelo de dados
-
-```mermaid
-erDiagram
-    aluno          ||--o{ emprestimo       : faz
-    emprestimo     ||--o{ emprestimo_livro : possui
-    livro          ||--o{ emprestimo_livro : e_emprestado
-    livro          ||--o{ livro_autor      : tem
-    autor          ||--o{ livro_autor      : escreve
-    livro          }o--|| categoria        : pertence
-    livro          }o--|| editora          : publicada_por
-```
-
 ## Tabelas
 
 | Tabela | Descrição |
